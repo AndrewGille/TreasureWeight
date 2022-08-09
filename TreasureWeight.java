@@ -46,12 +46,11 @@ public class TreasureWeight {
 			
 				
 			//get Metal from user set Metal in TreasureCalc
-			System.out.println("Enter Currency 1. Gold, 2. Silver 3. Copper 4. Staters 5. Ducats :");
-			String metal = scanner.next();
-			metal = treasurecalc.setMetal(metal);
+			if (choice==1) {
 			
-			if (choice==1) {	
-				
+				System.out.println("Enter Currency 1. Staters 2. Ducats 3. Decims:");
+				String metal = scanner.next();
+				metal = treasurecalc.setCurrency(metal);
 				System.out.println("Enter amount in lbs:");
 				double amt = scanner.nextDouble();
 				
@@ -60,8 +59,12 @@ public class TreasureWeight {
 				
 			
 			}else {
+				
+				System.out.println("Enter Currency 1. Gold, 2. Silver 3. Copper 4. Staters 5. Ducats :");
+				String metal = scanner.next();
+				metal = treasurecalc.setMetal(metal);
 			
-				System.out.println("Enter amount in staters or ducats:");
+				System.out.println("Enter amount in staters:");
 				double amt = scanner.nextDouble();
 			
 				// staters to weight calculations

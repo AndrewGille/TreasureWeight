@@ -30,6 +30,26 @@ public class TreasureCalc {
 	}
 	
 	
+	// Set Currency -----------------------------------
+	
+	public String setCurrency(String metal) {
+		
+		switch (metal) {
+		case "1":
+			metal="staters";
+			break;
+		case "2":
+			metal="ducats";
+			break;
+		case "3":
+			metal="decims";
+			break;
+		
+		}
+		return metal;
+	}
+	
+	
 	// getWeight -----------------------------------
 
 	public double getWeight(String metal, double amt) {
