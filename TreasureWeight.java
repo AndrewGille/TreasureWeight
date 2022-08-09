@@ -10,7 +10,7 @@ public class TreasureWeight {
 
 	public static void main(String[] args)  {
 			
-		//creates new instance of Bank class
+		//creates new instance of TreasureWeight class
 		TreasureWeight treasureweight = new TreasureWeight();
 		
 	
