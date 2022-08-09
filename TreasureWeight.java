@@ -45,10 +45,16 @@ public class TreasureWeight {
 				TreasureCalc treasurecalc;
 				treasurecalc = new TreasureCalc();
 				
-		while (again) {
+	
 			
 			// ask user if weight in staters or pounds
-			System.out.println("Result in Staters or lbs? - 1. Staters 2. Lbs");
+			System.out.println("Welcome to the Kiron Treasure Weight Calculator");
+			System.out.println("You can calculate either the weight of the treausre or the number of coins by weight");
+			System.out.println("Express the value of your coins in Staters (Roughly the value of $1USD) ");
+			System.out.println("Express weight in lbs.  (Yeah, Kiron uses the Imperial system of measurement)");
+			System.out.println("*******************************************************************************");
+			while (again) {
+			System.out.println("Result in weight or lbs? - 1. Number of Coins per lb. 2. Weight of Treasure based on value");
 			int choice=scanner.nextInt();
 			
 				
@@ -106,11 +112,11 @@ public class TreasureWeight {
 			int againStr = scanner.nextInt();
 			
 				if (againStr == 2) {
-						System.out.println(againStr+" Goodbye!");
+						System.out.println("Goodbye!");
 						again=false;
 						break;
 				}	else {
-						System.out.println(againStr+" Again!");
+						System.out.println("Again!");
 						again=true;			
 				}
 				
